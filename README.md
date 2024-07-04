@@ -28,7 +28,7 @@ docker-compose up --build
 
 작업순서는 다음과 같습니다.
 1. 데이터 수집
-2. 이미지에서 SIFT Feature 추출
+2. 이미지에서 SIFT Feature 추출, 이 작업의 진행상황은 docker client 앱에서 컨테이너 로그에서 확인이 가능합니다(cli 에서 확인이 되지 않습니다.)
 3. Elasticsearch 에 인덱싱
 
 위의 작업이 끝나면 http://localhost:8090/docs 에서 유사 이미지 검색이 가능합니다.
