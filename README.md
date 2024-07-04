@@ -95,7 +95,7 @@ docker-compose up --build
 
 - SIFT 알고리즘을 사용하여 이미지 특징을 추출합니다.
 
-### 특징 해싱
+### Feature hashing
 
 - 추출된 특징을 MinHash를 사용하여 해싱합니다.
 
