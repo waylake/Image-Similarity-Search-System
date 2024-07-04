@@ -2,6 +2,37 @@
 
 이 프로젝트는 웹 스크래핑을 통해 상품 정보를 수집하고, 이미지 유사도 검색 기능을 제공하는 시스템입니다.
 
+## 실행
+- **Docker**
+ 
+- **docker-compose**
+
+## 프로젝트 실행 방법 
+
+### 1. 프로젝트 클론 및 이동 
+
+
+```sh
+git clone https://github.com/waylake/Image-Similarity-Search-System
+cd Image-Similarity-Search-System
+```
+
+### 2. Docker Compose로 컨테이너 빌드 및 실행 
+
+
+```sh
+docker-compose up --build
+```
+
+빌드를 시작하면, 대략 10 ~ 20분 사이에 테스트 준비가 완료됩니다.
+
+작업순서는 다음과 같습니다.
+1. 데이터 수집
+2. 이미지에서 SIFT Feature 추출
+3. Elasticsearch 에 인덱싱
+
+위의 작업이 끝나면 http://localhost:8090/docs 에서 유사 이미지 검색이 가능합니다.
+
 ## 사용된 기술 및 스택
 
 ### 백엔드
